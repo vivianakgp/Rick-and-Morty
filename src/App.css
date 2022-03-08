@@ -1,4 +1,11 @@
 .App {
   text-align: center;
 }
-
+.locationInfo{
+  background-color: rgb(223, 112, 112);
+}
+.residentInfo{
+  width:200px;
+  background-color: aquamarine;
+  height:100px;
+}
