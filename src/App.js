@@ -19,7 +19,9 @@ function App() {
   console.log(data)
   return (
     <div className="App">
-      <SearchBox/>
+      <SearchBox 
+      dataSet={setData}
+      />
       <LocationInfo
       name={data.name}
       type={data.type}
