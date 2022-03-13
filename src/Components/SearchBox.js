@@ -1,6 +1,8 @@
 import React from "react";
 import axios from 'axios';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
    // https://rickandmortyapi.com/api/character/?name=rick&status=alive
 // https://rickandmortyapi.com/api/location/${value}
@@ -47,7 +49,9 @@ const SearchBox = ({dataSet})=> {
                 }}
             
             />
-            <span onClick={updateNewData}>search!!!!!</span>
+            {/* <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /> */}
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
+            {<span onClick={updateNewData}></span>}
             <div className="drop-down">
                 <li style={{display: showDropDown?"block":"none"}}>
                     {

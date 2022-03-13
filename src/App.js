@@ -1,12 +1,11 @@
 
-import './App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import SearchBox from './Components/SearchBox';
 import LocationInfo from './Components/LocationInfo';
 import ResidentsList from './Components/ResidentsList';  
-const randomId = () => Math.floor(Math.random()*126)+1;
 
+const randomId = () => Math.floor(Math.random()*126)+1;
 function App() {
   const [data, setData ]=useState({});
 
@@ -19,9 +18,10 @@ function App() {
   console.log(data)
   return (
     <div className="App">
-      <SearchBox 
-      dataSet={setData}
-      />
+      <header></header>
+      <h1>RICK AND MORTY</h1>
+      <div className="container">
+      <SearchBox dataSet={setData} />
       <LocationInfo
       name={data.name}
       type={data.type}
@@ -31,6 +31,7 @@ function App() {
       <ResidentsList 
       residents={data?.residents}
       />
+      </div>
     </div>
   );
 

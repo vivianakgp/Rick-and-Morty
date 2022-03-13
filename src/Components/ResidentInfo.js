@@ -10,15 +10,12 @@ const ResidentInfo = ({residentUrl}) => {
             // console.log(res.data);
             setResidentData(res.data)
         })
-
-
-    },[])
+    },[residentUrl])
     return(
-        // <p className="residentInfo">{residentUrl}</p>
         <div className="residentCard">
             <img></img>
             <div className="details">
-                <h2>{residentData?.name}</h2>
+                <h3>{residentData?.name}</h3>
                 <p>{residentData?.status}</p>
                 <p>{residentData.origin?.name}</p>
                 <p>{`Eoisodios where appear

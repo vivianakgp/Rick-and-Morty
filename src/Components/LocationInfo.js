@@ -8,7 +8,7 @@ import React from'react';
 const LocationInfo = ({name,type,dimension,population}) => {
     return (
         <div className="locationInfo">
-            <h1>{name}</h1>
+            <h2>{name}</h2>
             <div className='details'>
                 <span>{`Type:${type}`}</span>
                 <span>{`Dimension:${dimension}`}</span>
