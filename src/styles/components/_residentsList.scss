@@ -1,3 +1,56 @@
 .residentsList{
-    background-color: darkgreen;
+    // background-color: darkgreen;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap:2rem;
+}
+// Resident Info Styles
+.residentCard{
+    background-color: aliceblue;
+    position:relative;
+    grid-column: 1/-1;
+    border-radius: 20px;
+    overflow: hidden;
+
+    .residentCard__container{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .details{
+            background-color: rgba(0, 0, 0, 0.541);
+            color: antiquewhite;
+            position: absolute;
+            bottom: 0;
+            z-index: 20;
+            width: 100%;
+            padding: 15px;
+            font-size: 1.5em;
+
+        }
+
+    }
+
+}
+@media only screen and(min-width:600px) {
+    .residentCard{
+        grid-column: 2/6;
+    }
+}
+@media only screen and(min-width:1024px) {
+    .residentsList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 0 5% 10% 12%;
+    }
+    .residentCard{
+        width: 370px;
+        margin: 10px 15px;
+
+    }
 }

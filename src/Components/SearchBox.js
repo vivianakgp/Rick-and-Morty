@@ -38,20 +38,19 @@ const SearchBox = ({dataSet})=> {
     };
     return (
         <div className="SearchBox">
-            <>
-            <input
-                type="text" 
-                value={value} 
-                placeholder="type a location"
-                onChange={ e => {
-                    setValue(e.target.value);
-                    filterLocationsByName();
-                }}
-            
-            />
-            {/* <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /> */}
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
-            {<span onClick={updateNewData}></span>}
+            <div className="input__container">
+                <input
+                    type="text" 
+                    value={value} 
+                    placeholder="type a location"
+                    onChange={ e => {
+                        setValue(e.target.value);
+                        filterLocationsByName();
+                    }}
+                
+                />
+                <button onClick={updateNewData}>{<FontAwesomeIcon icon={faMagnifyingGlass} />}</button>
+            </div>
             <div className="drop-down">
                 <li style={{display: showDropDown?"block":"none"}}>
                     {
@@ -63,7 +62,6 @@ const SearchBox = ({dataSet})=> {
                     }
                 </li>
             </div>
-            </>
         </div>
     );
 }

@@ -2,15 +2,11 @@
 @use './components/searchBox';
 @use './components/locationInfo';
 @use './components/residentsList';
-// @use 'base';
-// @use 'base';
+
 //background: #44281d #e4a788 #f0e14a	#97ce4c	#e89ac7
-// font-family: 'Butcherman', cursive;
-// font-family: 'Lacquer', cursive; no
-// font-family: 'Pangolin', cursive;
-$font-se: 'Pangolin', cursive;
+
+$font-second: 'Pangolin', cursive;
 $font-main: 'Butcherman', cursive;
-$primary-color: #333;
 *{
     margin: 0;
     padding: 0;
@@ -20,24 +16,28 @@ body{
     background-color: #000000;
     color: #ffffff;
     font-size: 16px;
+    font-family:$font-second ;
 }
 .App{
-    background-color: #858585;
+    // background-color: #858585;
     min-width: 320px;
     max-width: 1400px;
+    margin: 0 auto;
     > header{
-        background-color: rgb(199, 241, 157);
-        height: 100px;
+        background-color: rgb(67, 68, 66);
+        height: 150px;
+        margin-bottom: 40px;
 
     }
     > h1{
         font-family:$font-main ;
-        font-size: 1.5em;
+        font-size: 3.2em;
         font-weight: 400;
         text-align: center;
+        color: #97ce4c;
     }
     .container{
-        border: 1px blue solid;
+        // border: 1px blue solid;
         padding: 22px;
         min-width: 320px;
         display: flex;

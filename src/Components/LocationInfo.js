@@ -10,9 +10,9 @@ const LocationInfo = ({name,type,dimension,population}) => {
         <div className="locationInfo">
             <h2>{name}</h2>
             <div className='details'>
-                <span>{`Type:${type}`}</span>
-                <span>{`Dimension:${dimension}`}</span>
-                <span>{`Population:${population}`}</span>
+                <h3>Type: <span>{type}</span></h3>
+                <h3>Dimension: <span>{dimension}</span></h3>
+                <h3>Population: <span>{population}</span></h3>
             </div>
         </div>
     );

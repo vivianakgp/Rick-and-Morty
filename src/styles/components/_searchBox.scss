@@ -1,3 +1,61 @@
+$font-second: 'Pangolin', cursive;
+//background: #44281d #e4a788 #f0e14a	#97ce4c	#e89ac7
+
 .SearchBox{
-    background-color: black;
+    width: 100%;    
+    .input__container{
+        width: 100%;
+        position: relative;
+
+        input {
+            width: 80%; 
+            height: 55px;
+            border: none;
+            border-radius: 8px 0 0 8px;
+            outline: none;
+            text-align: center;
+            font-family:$font-second ;
+            font-size: 1.7em;
+            background-color:  #ffffff;
+        }
+        input::placeholder{
+            text-align: center;
+            font-size: 1em;
+        }
+        button{
+            border: none;
+            display: inline-block;
+            width: 20%;
+            height: 55px;
+            color: black;
+            text-align: center;
+            font-size: 1.7em;
+            border-radius: 0 8px 8px 0;
+            background-color:  #ffffff;
+
+        }
+
+    }
+    .drop-down{
+        position: absolute;
+        z-index: 100;
+        min-width: 80%;
+        color: #97ce4c;
+        font-size: 1.7em;
+        border-radius: 8px;
+        background-color: #130303e1;
+
+
+    }
+
+}
+@media only screen and(min-width:1024px){
+    .SearchBox{
+        width: 70%;
+        margin: 0 auto;
+        .drop-down{
+            min-width: 50%;
+
+        }
+    }
 }

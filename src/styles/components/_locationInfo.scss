@@ -1,3 +1,44 @@
+$font-main: 'Butcherman', cursive;
+$font-second: 'Pangolin', cursive;
+
+//background: #44281d #e4a788 #f0e14a	#97ce4c	#e89ac7
+
 .locationInfo{
-    background-color: coral;
+    width: 100%;
+    min-height:180px ;
+    padding: 20px;
+    margin: 50px 0;
+    border-radius: 8px;
+    color: black;
+    background-color:  #e4a788d3;
+
+    >h2{
+        font-family:$font-main;
+        font-size: 2.5em;
+        font-weight: 200;
+        text-align: center;
+    }
+    .details{
+        text-align: center;
+        >h3{
+            font-family: $font-second;
+            font-size: 1.8em;
+            span{
+                font-weight: 200;
+                }
+
+        }
+
+
+    }
+}
+@media only screen and(min-width:1024px){
+    .locationInfo{
+        .details{
+            >h3{
+                display: inline;
+                margin: 0 20px;
+            }
+        }
+    }
 }

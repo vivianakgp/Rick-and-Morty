@@ -7,7 +7,7 @@ import ResidentsList from './Components/ResidentsList';
 
 const randomId = () => Math.floor(Math.random()*126)+1;
 function App() {
-  const [data, setData ]=useState({});
+  const [data, setData ] = useState({});
 
   useEffect(() => {
     axios.get(`https://rickandmortyapi.com/api/location/${randomId()}`)

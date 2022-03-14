@@ -4,16 +4,17 @@ import { useState, useEffect } from 'react';
 
 const ResidentInfo = ({residentUrl}) => {
     const [ residentData, setResidentData]=useState({});
-    useEffect(()=>{
+    useEffect(() => {
         axios.get(residentUrl)
         .then((res)=>{
-            // console.log(res.data);
+            console.log(res.data);
             setResidentData(res.data)
         })
-    },[residentUrl])
+    },[])
     return(
         <div className="residentCard">
-            <img></img>
+            <div className="residentCard__container">
+            <img src={residentData.image} alt="resident-img"/>
             <div className="details">
                 <h3>{residentData?.name}</h3>
                 <p>{residentData?.status}</p>
@@ -21,8 +22,7 @@ const ResidentInfo = ({residentUrl}) => {
                 <p>{`Eoisodios where appear
                 ${residentData.episode?.length}`}</p>
             </div>
-
-
+            </div>
         </div>
 
     );

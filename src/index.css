@@ -1,15 +1,139 @@
 .SearchBox {
-  background-color: black;
+  width: 100%;
+}
+.SearchBox .input__container {
+  width: 100%;
+  position: relative;
+}
+.SearchBox .input__container input {
+  width: 80%;
+  height: 55px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  text-align: center;
+  font-family: "Pangolin", cursive;
+  font-size: 1.7em;
+  background-color: #ffffff;
+}
+.SearchBox .input__container input::placeholder {
+  text-align: center;
+  font-size: 1em;
+}
+.SearchBox .input__container button {
+  border: none;
+  display: inline-block;
+  width: 20%;
+  height: 55px;
+  color: black;
+  text-align: center;
+  font-size: 1.7em;
+  border-radius: 0 8px 8px 0;
+  background-color: #ffffff;
+}
+.SearchBox .drop-down {
+  position: absolute;
+  z-index: 100;
+  min-width: 80%;
+  color: #97ce4c;
+  font-size: 1.7em;
+  border-radius: 8px;
+  background-color: #130303e1;
 }
 
+@media only screen and (min-width: 1024px) {
+  .SearchBox {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .SearchBox .drop-down {
+    min-width: 50%;
+  }
+}
 .locationInfo {
-  background-color: coral;
+  width: 100%;
+  min-height: 180px;
+  padding: 20px;
+  margin: 50px 0;
+  border-radius: 8px;
+  color: black;
+  background-color: #e4a788d3;
+}
+.locationInfo > h2 {
+  font-family: "Butcherman", cursive;
+  font-size: 2.5em;
+  font-weight: 200;
+  text-align: center;
+}
+.locationInfo .details {
+  text-align: center;
+}
+.locationInfo .details > h3 {
+  font-family: "Pangolin", cursive;
+  font-size: 1.8em;
+}
+.locationInfo .details > h3 span {
+  font-weight: 200;
 }
 
+@media only screen and (min-width: 1024px) {
+  .locationInfo .details > h3 {
+    display: inline;
+    margin: 0 20px;
+  }
+}
 .residentsList {
-  background-color: darkgreen;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
 }
 
+.residentCard {
+  background-color: aliceblue;
+  position: relative;
+  grid-column: 1/-1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.residentCard .residentCard__container {
+  width: 100%;
+  height: 100%;
+}
+.residentCard .residentCard__container img {
+  width: 100%;
+  height: 100%;
+}
+.residentCard .residentCard__container .details {
+  background-color: rgba(0, 0, 0, 0.541);
+  color: antiquewhite;
+  position: absolute;
+  bottom: 0;
+  z-index: 20;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 600px) {
+  .residentCard {
+    grid-column: 2/6;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .residentsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 0 5% 10% 12%;
+  }
+
+  .residentCard {
+    width: 370px;
+    margin: 10px 15px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -20,25 +144,27 @@ body {
   background-color: #000000;
   color: #ffffff;
   font-size: 16px;
+  font-family: "Pangolin", cursive;
 }
 
 .App {
-  background-color: #858585;
   min-width: 320px;
   max-width: 1400px;
+  margin: 0 auto;
 }
 .App > header {
-  background-color: #c7f19d;
-  height: 100px;
+  background-color: #434442;
+  height: 150px;
+  margin-bottom: 40px;
 }
 .App > h1 {
   font-family: "Butcherman", cursive;
-  font-size: 1.5em;
+  font-size: 3.2em;
   font-weight: 400;
   text-align: center;
+  color: #97ce4c;
 }
 .App .container {
-  border: 1px blue solid;
   padding: 22px;
   min-width: 320px;
   display: flex;
