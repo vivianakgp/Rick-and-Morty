@@ -11,7 +11,7 @@ const ResidentInfo = ({residentUrl}) => {
             console.log(res.data);
             setResidentData(res.data)
         })
-    },[])
+    },[residentUrl])
     const showResidentStatus = () => {
         if (residentData?.status === "Alive") return <span className="residentStatus" style={{background:"green"}}></span>;
         if (residentData?.status === "Dead") return <span className="residentStatus" style={{background:"red"}}></span>;
