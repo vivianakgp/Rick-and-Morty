@@ -17,25 +17,37 @@ body{
     color: #ffffff;
     font-size: 16px;
     font-family:$font-second ;
-}
-.App{
-    // background-color: #858585;
-    min-width: 320px;
-    max-width: 1400px;
-    margin: 0 auto;
-    > header{
-        background-color: rgb(67, 68, 66);
-        height: 150px;
-        margin-bottom: 40px;
+    background-image: url('https://www.fondoshd.mx/wallpapers/imagenes-de-rick-y-morty-para-fondo-de-pantalla-pc-4515.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    // background-repeat: no-repeat;
 
-    }
-    > h1{
-        font-family:$font-main ;
+}
+header{
+    background-color: #5a270d;
+    padding: 25px 0;
+    position: fixed;
+    width: 100vw;
+    height: 250px;
+    z-index: 300;
+
+    h1{
+        font-family:$font-main;
         font-size: 3.2em;
         font-weight: 400;
         text-align: center;
         color: #97ce4c;
     }
+    
+}
+
+.App{
+    // background-color: #858585;
+    min-width: 320px;
+    max-width: 1400px;
+    margin: 0px auto 100px;
+    padding-top: 310px;
     .container{
         // border: 1px blue solid;
         padding: 22px;
@@ -58,6 +70,12 @@ body{
         max-width: 85%;
 
     }
+}
+@media only screen and (min-width:110px){
+    
+        >h1{
+            font-size: 4.5em;
+        }
 }
 // FUNCTIONS
 // @mixin theme($theme: DarkGray) {

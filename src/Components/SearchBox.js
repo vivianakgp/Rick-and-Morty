@@ -42,7 +42,7 @@ const SearchBox = ({dataSet})=> {
                 <input
                     type="text" 
                     value={value} 
-                    placeholder="type a location"
+                    placeholder="Location Name"
                     onChange={ e => {
                         setValue(e.target.value);
                         filterLocationsByName();
@@ -52,7 +52,7 @@ const SearchBox = ({dataSet})=> {
                 <button onClick={updateNewData}>{<FontAwesomeIcon icon={faMagnifyingGlass} />}</button>
             </div>
             <div className="drop-down">
-                <li style={{display: showDropDown?"block":"none"}}>
+                <li style={{display: showDropDown? "block":"none", padding:showDropDown? "5%":"0"}}>
                     {
                         locations.map(elem => (
                         <ul  key={elem.id} onClick={()=> setValue(elem.name)}>

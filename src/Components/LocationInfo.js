@@ -9,7 +9,7 @@ const LocationInfo = ({name,type,dimension,population}) => {
     return (
         <div className="locationInfo">
             <h2>{name}</h2>
-            <div className='details'>
+            <div className='locationInfo__details'>
                 <h3>Type: <span>{type}</span></h3>
                 <h3>Dimension: <span>{dimension}</span></h3>
                 <h3>Population: <span>{population}</span></h3>

@@ -2,7 +2,7 @@ $font-second: 'Pangolin', cursive;
 //background: #44281d #e4a788 #f0e14a	#97ce4c	#e89ac7
 
 .SearchBox{
-    width: 100%;    
+    width: 100%; 
     .input__container{
         width: 100%;
         position: relative;
@@ -40,21 +40,27 @@ $font-second: 'Pangolin', cursive;
         position: absolute;
         z-index: 100;
         min-width: 80%;
-        color: #97ce4c;
+        color: #e4a788;
+        text-align: center;
         font-size: 1.7em;
-        border-radius: 8px;
-        background-color: #130303e1;
+        border-radius: 10px;
+        background-color: #030000;
+        ul{
+            cursor: pointer;
+            margin: 7px;
+        }
 
 
     }
 
 }
-@media only screen and(min-width:1024px){
+@media only screen and(min-width:800px){
     .SearchBox{
-        width: 70%;
+        max-width: 800px;
         margin: 0 auto;
         .drop-down{
-            min-width: 50%;
+            min-width: 40%;
+
 
         }
     }

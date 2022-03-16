@@ -17,22 +17,25 @@ function App() {
 
   console.log(data)
   return (
-    <div className="App">
-      <header></header>
-      <h1>RICK AND MORTY</h1>
-      <div className="container">
-      <SearchBox dataSet={setData} />
-      <LocationInfo
-      name={data.name}
-      type={data.type}
-      dimension={data.dimension}
-      population={data.residents?.length}
-      />
-      <ResidentsList 
-      residents={data?.residents}
-      />
+    <>
+      <header>
+        <h1>RiCK AnD MoRtY wiKi</h1>
+        <SearchBox dataSet={setData} />
+      </header>
+      <div className="App">
+        <div className="container">
+        <LocationInfo
+        name={data.name}
+        type={data.type}
+        dimension={data.dimension}
+        population={data.residents?.length}
+        />
+        <ResidentsList 
+        residents={data?.residents}
+        />
+        </div>
       </div>
-    </div>
+    </>
   );
 
 }

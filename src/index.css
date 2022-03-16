@@ -35,19 +35,24 @@
   position: absolute;
   z-index: 100;
   min-width: 80%;
-  color: #97ce4c;
+  color: #e4a788;
+  text-align: center;
   font-size: 1.7em;
-  border-radius: 8px;
-  background-color: #130303e1;
+  border-radius: 10px;
+  background-color: #030000;
+}
+.SearchBox .drop-down ul {
+  cursor: pointer;
+  margin: 7px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 800px) {
   .SearchBox {
-    width: 70%;
+    max-width: 800px;
     margin: 0 auto;
   }
   .SearchBox .drop-down {
-    min-width: 50%;
+    min-width: 40%;
   }
 }
 .locationInfo {
@@ -55,29 +60,29 @@
   min-height: 180px;
   padding: 20px;
   margin: 50px 0;
-  border-radius: 8px;
-  color: black;
-  background-color: #e4a788d3;
+  border-radius: 15px;
+  color: #e89ac7;
+  background-color: rgba(5, 4, 4, 0.904);
 }
 .locationInfo > h2 {
-  font-family: "Butcherman", cursive;
   font-size: 2.5em;
   font-weight: 200;
   text-align: center;
+  margin-bottom: 20px;
 }
-.locationInfo .details {
+.locationInfo .locationInfo__details {
   text-align: center;
 }
-.locationInfo .details > h3 {
+.locationInfo .locationInfo__details > h3 {
   font-family: "Pangolin", cursive;
   font-size: 1.8em;
 }
-.locationInfo .details > h3 span {
+.locationInfo .locationInfo__details > h3 span {
   font-weight: 200;
 }
 
 @media only screen and (min-width: 1024px) {
-  .locationInfo .details > h3 {
+  .locationInfo .locationInfo__details > h3 {
     display: inline;
     margin: 0 20px;
   }
@@ -104,8 +109,8 @@
   width: 100%;
   height: 100%;
 }
-.residentCard .residentCard__container .details {
-  background-color: rgba(0, 0, 0, 0.541);
+.residentCard .residentCard__container .residentCard__details {
+  background-color: rgba(0, 0, 0, 0.678);
   color: antiquewhite;
   position: absolute;
   bottom: 0;
@@ -113,6 +118,15 @@
   width: 100%;
   padding: 15px;
   font-size: 1.5em;
+}
+.residentCard .residentCard__container .residentCard__details > h3 {
+  color: #97ce4c;
+}
+.residentCard .residentCard__container .residentCard__details .residentStatus {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 @media only screen and (min-width: 600px) {
@@ -145,24 +159,33 @@ body {
   color: #ffffff;
   font-size: 16px;
   font-family: "Pangolin", cursive;
+  background-image: url("https://www.fondoshd.mx/wallpapers/imagenes-de-rick-y-morty-para-fondo-de-pantalla-pc-4515.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
-.App {
-  min-width: 320px;
-  max-width: 1400px;
-  margin: 0 auto;
+header {
+  background-color: #5a270d;
+  padding: 25px 0;
+  position: fixed;
+  width: 100vw;
+  height: 250px;
+  z-index: 300;
 }
-.App > header {
-  background-color: #434442;
-  height: 150px;
-  margin-bottom: 40px;
-}
-.App > h1 {
+header h1 {
   font-family: "Butcherman", cursive;
   font-size: 3.2em;
   font-weight: 400;
   text-align: center;
   color: #97ce4c;
+}
+
+.App {
+  min-width: 320px;
+  max-width: 1400px;
+  margin: 0px auto 100px;
+  padding-top: 310px;
 }
 .App .container {
   padding: 22px;
@@ -180,6 +203,11 @@ body {
   .container {
     margin: 0 auto;
     max-width: 85%;
+  }
+}
+@media only screen and (min-width: 110px) {
+  > h1 {
+    font-size: 4.5em;
   }
 }
 
