@@ -2,27 +2,27 @@ $font-second: 'Pangolin', cursive;
 
 
 .locationInfo{
-    width: 100%;
-    min-height:180px ;
-    padding: 20px;
-    margin: 50px 0;
+    width: 95%;
+    // height:180px ;
+    padding: 30px 10px;
+    margin: 10px 0;
+    text-align: center;
     border-radius: 15px;
-    // color: #97ce4c;
     color: #e89ac7;
     background-color:  rgba(5, 4, 4, 0.904);
 
     >h2{
         // font-family:$font-main;
-        font-size: 2.5em;
+        font-size: 2.2em;
         font-weight: 200;
-        text-align: center;
         margin-bottom: 20px;
     }
     .locationInfo__details{
-        text-align: center;
+        // text-align: center;
         >h3{
             font-family: $font-second;
-            font-size: 1.8em;
+            font-size: 1.5em;
+            letter-spacing: 2px;
             span{
                 font-weight: 200;
                 }

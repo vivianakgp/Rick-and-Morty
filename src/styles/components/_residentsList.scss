@@ -1,13 +1,17 @@
+h1{
+    color: #0c0007;
+    font-size: 3.5em;
+    font-weight: 800;
+    margin: 20px;
+}
 .residentsList{
-    // background-color: darkgreen;
-    width: 100%;
+    width: 75%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap:2rem;
 }
 // Resident Info Styles
 .residentCard{
-    background-color: aliceblue;
     position:relative;
     grid-column: 1/-1;
     border-radius: 20px;
@@ -33,8 +37,8 @@
                 color: #97ce4c;
             }
             .residentStatus{
-                width: 20px;
-                height: 20px;
+                width: 14px;
+                height: 14px;
                 border-radius: 50%;
                 display: inline-block;
             }
@@ -42,22 +46,19 @@
     }
 
 }
-@media only screen and(min-width:600px) {
-    .residentCard{
-        grid-column: 2/6;
-    }
-}
-@media only screen and(min-width:1024px) {
-    .residentsList{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: auto;
-    padding: 0 5% 10% 12%;
-    }
-    .residentCard{
-        width: 370px;
-        margin: 10px 15px;
 
+@media only screen and(min-width:800px) {
+
+    .residentsList{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .residentCard__containe{
+            background-color: antiquewhite;
+        }
     }
+
 }

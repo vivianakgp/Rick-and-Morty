@@ -49,6 +49,7 @@ const SearchBox = ({dataSet})=> {
                     }}
                 
                 />
+
                 <button onClick={updateNewData}>{<FontAwesomeIcon icon={faMagnifyingGlass} />}</button>
             </div>
             <div className="drop-down">

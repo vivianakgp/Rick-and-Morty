@@ -26,7 +26,7 @@ const ResidentInfo = ({residentUrl}) => {
                 <p style={{display:"inline-block", marginRight:"5px"}}>{residentData?.status}</p>
                 <span>{showResidentStatus()}</span>
                 <p>{`Origin: ${residentData.origin?.name}`}</p>
-                <p>{`Eoisodios where appear:
+                <p>{`Episodios where appear:
                 ${residentData.episode?.length}`}</p>
             </div>
             </div>

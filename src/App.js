@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>RiCK AnD MoRtY wiKi</h1>
+        <h1>RiCK AnD MoRtY</h1>
         <SearchBox dataSet={setData} />
       </header>
       <div className="App">

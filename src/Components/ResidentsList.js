@@ -5,10 +5,13 @@ const ResidentsList = ({residents}) => {
 
     // const residentList = residents?.map(resident => <p className="ultest" key={resident}>{resident}</p>)
     return(
+        <>
+        <h1>Residents</h1>
         <div className="residentsList">
-            {/* {residentList} */}
-            {residents?.map(resident => <ResidentInfo key={resident} residentUrl={resident}/>)}
+                {residents?.map(resident => <ResidentInfo key={resident} residentUrl={resident}/>)}
         </div>
+        </>
+
     )
 }
 export default ResidentsList;
