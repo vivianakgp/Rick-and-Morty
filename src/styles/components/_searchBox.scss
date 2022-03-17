@@ -44,6 +44,9 @@ $font-second: 'Pangolin', cursive;
         text-align: center;
         font-size: 1.7em;
         border-radius: 10px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+
         background-color: #030000;
         ul{
             cursor: pointer;

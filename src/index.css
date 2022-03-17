@@ -39,6 +39,8 @@
   text-align: center;
   font-size: 1.7em;
   border-radius: 10px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   background-color: #030000;
 }
 .SearchBox .drop-down ul {
@@ -157,7 +159,7 @@
 body {
   background-color: #000000;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 10px;
   font-family: "Pangolin", cursive;
   background-image: url("https://www.fondoshd.mx/wallpapers/imagenes-de-rick-y-morty-para-fondo-de-pantalla-pc-4515.jpg");
   background-size: cover;
@@ -167,15 +169,12 @@ body {
 
 header {
   background-color: #5a270d;
-  padding: 25px 0;
-  position: fixed;
-  width: 100vw;
-  height: 250px;
+  padding: 15px 0;
   z-index: 300;
 }
 header h1 {
   font-family: "Butcherman", cursive;
-  font-size: 3.2em;
+  font-size: 2.5em;
   font-weight: 400;
   text-align: center;
   color: #97ce4c;
@@ -185,7 +184,6 @@ header h1 {
   min-width: 320px;
   max-width: 1400px;
   margin: 0px auto 100px;
-  padding-top: 310px;
 }
 .App .container {
   padding: 22px;
@@ -197,7 +195,7 @@ header h1 {
 
 @media only screen and (min-width: 680px) {
   body {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .container {
