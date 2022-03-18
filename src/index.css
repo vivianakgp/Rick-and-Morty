@@ -1,4 +1,17 @@
-.SearchBox .input__container button, .SearchBox .input__container input {
+.SearchBox {
+  width: 80%;
+  margin: 15px auto;
+  position: relative;
+}
+.SearchBox .input__container {
+  width: 100%;
+  height: 55px;
+}
+.SearchBox .input__container input {
+  width: 100%;
+  font-family: "Pangolin", cursive;
+  outline: none;
+  border-radius: 20px;
   border: none;
   height: inherit;
   text-align: center;
@@ -6,40 +19,18 @@
   font-size: 1.7em;
   background-color: #ffffff;
 }
-
-.SearchBox {
-  width: 60%;
-  margin: 0 auto;
-}
-.SearchBox .input__container {
-  width: 100%;
-  height: 40px;
-  position: relative;
-}
-.SearchBox .input__container input {
-  width: 80%;
-  font-family: "Pangolin", cursive;
-  outline: none;
-  border-radius: 12px 0 0 12px;
-}
 .SearchBox .input__container input::placeholder {
   display: none;
   text-align: center;
   font-size: 1em;
 }
-.SearchBox .input__container button {
-  width: 20%;
-  color: black;
-  border-radius: 0 12px 12px 0;
-  border-style: none;
-}
 .SearchBox .drop-down {
   position: absolute;
   z-index: 100;
-  min-width: 180px;
+  width: 100%;
   color: #e4a788;
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.9em;
   border-radius: 10px;
   background-color: #030000;
 }
@@ -48,25 +39,22 @@
   margin: 7px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 580px) {
   .SearchBox {
-    max-width: 500px;
-  }
-  .SearchBox .drop-down {
-    min-width: 39%;
+    max-width: 580px;
   }
 }
 .locationInfo {
   width: 95%;
   padding: 30px 10px;
-  margin: 10px 0;
+  margin: 5% 0;
   text-align: center;
   border-radius: 15px;
   color: #e89ac7;
   background-color: rgba(5, 4, 4, 0.904);
 }
 .locationInfo > h2 {
-  font-size: 2.2em;
+  font-size: 4em;
   font-weight: 200;
   margin-bottom: 20px;
 }
@@ -164,20 +152,20 @@ body {
 }
 
 header {
+  min-width: 320px;
   background-color: #5a270d;
-  padding: 15px 0;
-  z-index: 300;
+  padding: 15px 8px;
+  width: 100vw;
 }
 header h1 {
   font-family: "Butcherman", cursive;
-  font-size: 2.5em;
+  font-size: 8vw;
   font-weight: 400;
   text-align: center;
   color: #97ce4c;
 }
 
 .App {
-  min-width: 320px;
   max-width: 1400px;
   margin: 0px auto 100px;
 }
@@ -189,7 +177,7 @@ header h1 {
   align-items: center;
 }
 
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 710px) {
   body {
     font-size: 14px;
   }
@@ -202,12 +190,6 @@ header h1 {
 @media only screen and (min-width: 680px) {
   .App .container {
     padding: 0;
-  }
-}
-@media only screen and (min-width: 110px) {
-  header h1 {
-    font-size: 4em;
-    letter-spacing: 4px;
   }
 }
 

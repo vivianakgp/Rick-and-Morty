@@ -23,21 +23,22 @@ body{
     background-position: center center;
 }
 header{
+    min-width: 320px;
     background-color: #5a270d;
-    padding: 15px 0;
-    z-index: 300;
+    padding: 15px 8px;
+    width: 100vw;
     h1{
         font-family:$font-main;
-        font-size: 2.5em;
+        font-size: 8vw;
         font-weight: 400;
         text-align: center;
         color: #97ce4c;
+        // background-color: darkslateblue;
     }  
 }
 
 .App{
     // background-color: #858585;
-    min-width: 320px;
     max-width: 1400px;
     margin: 0px auto 100px;
     .container{
@@ -49,11 +50,10 @@ header{
         align-items: center;
     }
 }
-@media only screen and (min-width:680px){
+@media only screen and (min-width:710px){
     body{
         font-size: 14px;
     }
-
     .container{
         margin: 0 auto;
         max-width: 70%;
@@ -66,16 +66,7 @@ header{
         }
     }
 }
-@media only screen and (min-width:110px){
-    header{
-        h1{
-            font-size: 4em;
-            letter-spacing: 4px;
-        }
 
-    }
-
-}
 // FUNCTIONS
 // @mixin theme($theme: DarkGray) {
 //     background: $theme;
