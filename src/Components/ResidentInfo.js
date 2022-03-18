@@ -20,15 +20,15 @@ const ResidentInfo = ({residentUrl}) => {
     return (
         <div className="residentCard">
             <div className="residentCard__container">
-            <img src={residentData.image} alt="resident-img"/>
-            <div className="residentCard__details">
-                <h3>{residentData?.name}</h3>
-                <p style={{display:"inline-block", marginRight:"5px"}}>{residentData?.status}</p>
-                <span>{showResidentStatus()}</span>
-                <p>{`Origin: ${residentData.origin?.name}`}</p>
-                <p>{`Episodios where appear:
-                ${residentData.episode?.length}`}</p>
-            </div>
+                <img src={residentData.image} alt="resident-img"/>
+                <div className="residentCard__details">
+                    <h3>{residentData?.name}</h3>
+                    <p style={{display:"inline-block", marginRight:"5px"}}>{residentData?.status}</p>
+                    <span>{showResidentStatus()}</span>
+                    <p>{`Origin: ${residentData.origin?.name}`}</p>
+                    <p>{`Episodios where appear:
+                    ${residentData.episode?.length}`}</p>
+                </div>
             </div>
         </div>
     );

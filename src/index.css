@@ -54,7 +54,7 @@
   background-color: rgba(5, 4, 4, 0.904);
 }
 .locationInfo > h2 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 200;
   margin-bottom: 20px;
 }
@@ -81,7 +81,7 @@ h1 {
 }
 
 .residentsList {
-  width: 75%;
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
@@ -92,6 +92,7 @@ h1 {
   grid-column: 1/-1;
   border-radius: 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 .residentCard .residentCard__container {
   width: 100%;
@@ -123,15 +124,13 @@ h1 {
 
 @media only screen and (min-width: 800px) {
   .residentsList {
+    width: 75%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
     width: 100%;
-  }
-  .residentsList .residentCard__containe {
-    background-color: antiquewhite;
   }
 }
 * {
@@ -180,6 +179,11 @@ header h1 {
 @media only screen and (min-width: 710px) {
   body {
     font-size: 14px;
+  }
+
+  header h1 {
+    font-size: 6vw;
+    letter-spacing: 14px;
   }
 
   .container {
