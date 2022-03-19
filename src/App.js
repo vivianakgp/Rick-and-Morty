@@ -11,7 +11,6 @@ function App() {
   const [data, setData ] = useState({});
   const [ currentPage , setCurrenPage ] = useState(1);
   const [ residentPerPage ] = useState(10);
-  const [isSelect, setIsSelect ] = useState(false);
 
 
   useEffect(() => {
@@ -25,14 +24,8 @@ function App() {
   const indexOfLastResident = currentPage * residentPerPage;//1*10= 10 
   const indexOhFirstResident = indexOfLastResident - residentPerPage;//10-10= 0
   const currentResident = data.residents?.slice(indexOhFirstResident, indexOfLastResident);
-  // console.log(data.residents?.slice(indexOhFirstResident, indexOfLastResident))
-  console.log(currentResident)
   // change page
-  const paginate = (pageNumber)=>{
-    setCurrenPage(pageNumber);
-  } 
-
-
+  const paginate = (pageNumber) => setCurrenPage(pageNumber);
   return (
     <>
       <header>
@@ -55,7 +48,6 @@ function App() {
         residentPerPage={residentPerPage}
         totalResisdents={data.residents?.length}
         paginate={paginate}
-        isSelect={isSelect}
         />
         </div>
       </div>
