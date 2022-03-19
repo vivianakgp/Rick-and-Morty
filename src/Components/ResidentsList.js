@@ -1,9 +1,7 @@
 import React from 'react';
 import ResidentInfo from './ResidentInfo';
-
 const ResidentsList = ({residents}) => {
 
-    // const residentList = residents?.map(resident => <p className="ultest" key={resident}>{resident}</p>)
     return(
         <>
         <h1>Residents</h1>

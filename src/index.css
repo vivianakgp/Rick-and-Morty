@@ -133,6 +133,29 @@ h1 {
     width: 100%;
   }
 }
+.navPagination {
+  background-color: #054630;
+  width: 70%;
+  list-style: none;
+  overflow-x: scroll;
+  padding: 5px;
+}
+.navPagination .navPagi__content {
+  width: fit-content;
+  background-color: #0c110f;
+  display: flex;
+  flex-direction: row;
+}
+.navPagination .navPagi__content li {
+  margin: 6px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
 * {
   margin: 0;
   padding: 0;
@@ -165,10 +188,13 @@ header h1 {
 }
 
 .App {
+  background-color: #ac5c94;
   max-width: 1400px;
   margin: 0px auto 100px;
+  overflow-y: hidden;
 }
 .App .container {
+  border: 1px #060608 solid;
   padding: 40px;
   min-width: 320px;
   display: flex;

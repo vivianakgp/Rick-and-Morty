@@ -2,6 +2,7 @@
 @use './components/searchBox';
 @use './components/locationInfo';
 @use './components/residentsList';
+@use './components/pagination';
 
 //background: #44281d #e4a788 #f0e14a	#97ce4c	#e89ac7
 
@@ -38,11 +39,12 @@ header{
 }
 
 .App{
-    // background-color: #858585;
+    background-color: #ac5c94;
     max-width: 1400px;
     margin: 0px auto 100px;
+    overflow-y: hidden;
     .container{
-        // border: 1px blue so}lid;
+        border: 1px rgb(6, 6, 8) solid;
         padding: 40px;
         min-width: 320px;
         display: flex;
