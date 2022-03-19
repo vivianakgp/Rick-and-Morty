@@ -13,8 +13,8 @@ const Pagination = ({residentPerPage, totalResisdents, paginate,isSelect}) => {
         <ul className="navPagi__content">
             {
                 pageNumber.map(num => (
-                    <li key={num} style={{background: isSelect?'green':'pink'}}>
-                        <a onClick={() => paginate(num)}href='!#'>{num}</a>
+                    <li key={num} onClick={(e) => paginate(num)}>
+                        <a href='!#'>{num}</a>
                     </li>
                 ))
             }

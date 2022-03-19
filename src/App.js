@@ -28,7 +28,10 @@ function App() {
   // console.log(data.residents?.slice(indexOhFirstResident, indexOfLastResident))
   console.log(currentResident)
   // change page
-  const paginate = (pageNumber)=> setCurrenPage(pageNumber);
+  const paginate = (pageNumber)=>{
+    setCurrenPage(pageNumber);
+  } 
+
 
   return (
     <>

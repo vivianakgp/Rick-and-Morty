@@ -134,28 +134,34 @@ h1 {
   }
 }
 .navPagination {
-  background-color: #054630;
-  width: 70%;
+  max-width: 70%;
   list-style: none;
   overflow-x: scroll;
+  margin-top: 50px;
   padding: 5px;
 }
 .navPagination .navPagi__content {
   width: fit-content;
-  background-color: #0c110f;
   display: flex;
   flex-direction: row;
 }
 .navPagination .navPagi__content li {
-  margin: 6px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aliceblue;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 6px;
+  border-radius: 50%;
+  background-color: black;
 }
+.navPagination .navPagi__content li a {
+  text-decoration: none;
+  color: #97ce4c;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -188,13 +194,10 @@ header h1 {
 }
 
 .App {
-  background-color: #ac5c94;
   max-width: 1400px;
   margin: 0px auto 100px;
-  overflow-y: hidden;
 }
 .App .container {
-  border: 1px #060608 solid;
   padding: 40px;
   min-width: 320px;
   display: flex;
