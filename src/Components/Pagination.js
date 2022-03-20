@@ -14,7 +14,7 @@ const Pagination = ({residentPerPage, totalResisdents, paginate}) => {
             {
                 pageNumber.map(num => (
                     <li key={num} onClick={(e) => paginate(num)}>
-                        <a href='!#'>{num}</a>
+                        {num}
                     </li>
                 ))
             }
