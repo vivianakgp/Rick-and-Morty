@@ -19,7 +19,7 @@ function App() {
     .catch(err => console.log(err))
   },[]);
 
-  console.log(data)
+  // console.log(data)
   // get current residents
   const indexOfLastResident = currentPage * residentPerPage;//1*10= 10 
   const indexOhFirstResident = indexOfLastResident - residentPerPage;//10-10= 0
