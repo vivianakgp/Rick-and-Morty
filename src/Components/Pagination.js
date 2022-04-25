@@ -1,6 +1,6 @@
 import React from 'react';
-const Pagination = ({residentPerPage, totalResisdents, paginate}) => {
 
+const Pagination = ({residentPerPage, totalResisdents, paginate}) => {
     const pageNumber = [];//1-2-3-4-5-6-7-8-9-10-11-12.....-26
     // La función Math.ceil() devuelve el entero mayor o igual más próximo a un número dado.
     // Math.ceil( totalResisdents / residentPerPage) 10/260 o el largo del arrat residents =26
